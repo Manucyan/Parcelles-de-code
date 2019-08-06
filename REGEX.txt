@@ -1,0 +1,51 @@
+//REMPLACEMENT DES CARACTÈRES SPÉCIAUX
+[àâæçéèêëîôœùûüÿÀÂÆÇÉÈÊËÎÔŒÙÛÜŸ€¢£¥ƒáÁâÂàÀåÅãÃäÄæÆçÇéÉêÊèÈëËíÍîÎìÌïÏñÑóÓôÔòÒøØõÕöÖœŒšŠßðÐþÞúÚûÛùÙüÜýÝÿŸ°]
+€	&euro;							Ó	&Oacute;		ú	&uacute;
+¢	&cent;			é	&eacute;		ô	&ocirc;			Ú	&Uacute;
+£	&pound;			É	&Eacute;		Ô	&Ocirc;			û	&ucirc;
+¥	&yen;			ê	&ecirc;			ò	&ograve;		Û	&Ucirc;
+ƒ	&fnof;			Ê	&Ecirc;			Ò	&Ograve;		ù	&ugrave;
+á	&aacute;		è	&egrave;		ø	&oslash;		Ù	&Ugrave;
+Á	&Aacute;		È	&Egrave;		Ø	&Oslash;		ü	&uuml;
+â	&acirc;			ë	&euml;			õ	&otilde;		Ü	&Uuml;
+Â	&Acirc;			Ë	&Euml;			Õ	&Otilde;		ý	&yacute;
+à	&agrave;		í	&iacute;		ö	&ouml;			Ý	&Yacute;
+À	&Agrave;		Í	&Iacute;		Ö	&Ouml;			ÿ	&yuml;
+å	&aring;			î	&icirc;			œ	&oelig;			Ÿ	&Yuml;
+Å	&Aring;			Î	&Icirc;			Œ	&OElig;		
+ã	&atilde;		ì	&igrave;		š	&scaron;		
+Ã	&Atilde;		Ì	&Igrave;		Š	&Scaron;		
+ä	&auml;			ï	&iuml;			ß	&szlig;		
+Ä	&Auml;			Ï	&Iuml;			ð	&eth;		
+æ	&aelig;			ñ	&ntilde;		Ð	&ETH;		
+Æ	&AElig;			Ñ	&Ntilde;		þ	&thorn;		
+ç	&ccedil;		ó	&oacute;		Þ	&THORN;		
+Ç	&Ccedil;
+
+//ÉCHAPPEMENTS
+^ $ \ | . { } [ ] ( ) ? # ! + * 
+
+
+accent aigu = acute
+accent grave = grave
+circonflex = circ
+tréma = uml (pour 'umlaut' en anglais)
+tilde = tilde (avec e final)
+ligature = lig
+cédille = cedil
+
+//CONSTANTES CSS (ne pas oublier "MENU")
+[A-Z]{2,}(_[A-Z0-9]+)*
+
+//CONSTANTE NON-DÉFINIES AVEC DES GUILLEMETS
+^define\([^'"]
+
+
+[[:blank:]] Space or tab only
+[[:space:]] Whitespace
+\s Any whitespace character
+\v Vertical whitespace
+\h Horizontal whitespace
+x Ignore whitespace
+
+
